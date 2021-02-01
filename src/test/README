@@ -1,0 +1,10 @@
+This code is used to perform an end to end test of the dlp circuit
+
+
+The cpm end is a loop reader/writer that sends a data byte to the
+unix end, the unix end echos the byte back to the cpm end.
+
+At the cpm end we receive the byte and compair it to the sent byte,
+differences are logged to the console.
+
+
