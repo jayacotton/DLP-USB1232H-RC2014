@@ -1,0 +1,14 @@
+; Modified from the FT245R driver to support
+; DLP-USB1232H
+; FT245R mode FIFO-to-USB module
+;
+USBPORT	equ	0AAh	; port on Dual SIO S100 board interface
+STSPORT	equ	0ABH	; Status port	
+
+; Status port bits:
+;	bit 0: Tx space available in FIFO
+;	bit 1: Rx data available in FIFO
+
+USBRXR	equ	00000010b	; Rx data available in FIFO
+USBTXR	equ	00000001b	; Tx space available in FIFO
+
